@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .container {
+        background: #ff8ae8;
+        display: inline-block;
+        border: 20px solid #ff8ae8;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 80px);
+        grid-template-rows: repeat(5, 80px);
+        grid-gap: 5px;
+      }
+
+      .cell {
+         /* center the cell content */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: Arial;
+        font-size: 24;
+        font-weight: bold;
+        background: white;
+      }
+
+      .head {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 50px;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: bold;
+        color: White;
+        background: #ff8ae8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head">TikTok Bingo</div>
+      <div class="grid" id="grid">
+
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
