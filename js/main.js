@@ -62,6 +62,7 @@ const list =
 "Red-neck",
 "Shirtless",
 "Twerking",
+"Vampire",
 "Police",
 "Vegan",
 "Chest hair",
