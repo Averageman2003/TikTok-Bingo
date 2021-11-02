@@ -5,27 +5,23 @@
     <meta charset="utf-8">
     <style>
       .container {
-        background: #ff8ae8;
+        background: black;
         display: inline-block;
-        border: 20px solid #ff8ae8;
+        box-shadow: 2px 2px red;
+        border: 20px solid black;
       }
 
       .grid {
         display: grid;
+        box-shadow: -2px -2px cyan;
         grid-template-columns: repeat(5, 80px);
         grid-template-rows: repeat(5, 80px);
         grid-gap: 5px;
       }
 
-      .cell {
-         /* center the cell content */
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        font-family: Arial;
-        font-size: 24;
-        font-weight: bold;
-        background: white;
+      .text {
+        color: #5f5f5f;
+        font-size: 12px;
       }
 
       .head {
@@ -37,7 +33,7 @@
         font-size: 30px;
         font-weight: bold;
         color: White;
-        background: #ff8ae8;
+        background: black;
       }
     </style>
   </head>
@@ -49,6 +45,8 @@
 
       </div>
     </div>
+    <p class="text">Click the boxes to highlight them. Refresh the page to generate a new card.</p>
+    <p class="text">Bingo card generator made by <b>Fernkarry</b></p>
   </body>
   <script src="js/main.js"></script>
 </html>

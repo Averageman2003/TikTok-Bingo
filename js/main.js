@@ -1,3 +1,4 @@
+//List of all possible items that can appear on the card
 const list =
 ["Furry",
 "Fur-suit",
@@ -42,10 +43,12 @@ const list =
 "Obese",
 "Under 13",
 "Diaper",
-"Faker",
+"Lying",
 "Theft",
 "Abuse",
 "Death",
+"Maid outfit",
+"Bullying",
 "Prune face",
 "Crack head",
 "Alcohol",
@@ -81,6 +84,7 @@ const list =
 "Minecraft",
 "Roblox",];
 
+//creates buttons
 function AddItem(title) {
   var btn = document.createElement("BUTTON");
   btn.innerHTML = title;
@@ -90,7 +94,7 @@ function AddItem(title) {
   })
 }
 
-
+//generates a randomized list of items for the new card
 function GenerateList() {
   let templist = list;
   let newlist = [];
@@ -105,7 +109,6 @@ function GenerateList() {
       }
     }
   }
-
   for (let i = 0; i < newlist.length; i++) {
     AddItem(newlist[i]);
   }
