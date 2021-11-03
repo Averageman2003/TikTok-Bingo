@@ -85,6 +85,7 @@ const list =
 "Fake disabilities",
 "Mask",
 "Covid-19",
+"Cos-play",
 "Genuinely funny",
 "Fortnite",
 "Minecraft",
