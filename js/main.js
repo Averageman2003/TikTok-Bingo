@@ -28,8 +28,8 @@ const list =
 "Tomboy",
 "Femboy",
 "Too close",
-"Balding/Bald",
-"Feral/Otherkin",
+"Balding/ Bald",
+"Feral/ Otherkin",
 "High-pitch voice",
 "Neck-beard",
 "Ring tone",
@@ -50,11 +50,11 @@ const list =
 "Death",
 "Maid outfit",
 "Bullying",
-"Prune face/Wrinkly",
+"Prune face/ Wrinkly",
 "Crack head",
 "Singing without music",
 "Anti-vax",
-"Pretending to be strong",
+"Pretending to be tough",
 "School",
 "Addiction",
 "Alcohol",
@@ -94,8 +94,15 @@ const list =
 function AddItem(title) {
   var btn = document.createElement("BUTTON");
   btn.innerHTML = title;
+  btn.classList.add('button');
   document.getElementById("grid").appendChild(btn).addEventListener("click", function() {
-    btn.style.background = "yellow";
+    if ( btn.classList.contains('button') ) {
+      btn.classList.remove('button');
+      btn.classList.add('button-highlighted');
+    } else if ( btn.classList.contains('button-highlighted') ) {
+      btn.classList.remove('button-highlighted');
+      btn.classList.add('button');
+    }
     console.log("clicked", btn);
   })
 }
