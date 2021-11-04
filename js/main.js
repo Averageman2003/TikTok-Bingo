@@ -87,6 +87,8 @@ const list =
 "Covid-19",
 "Cos-play",
 "Genuinely funny",
+"Psycho bitch",
+"Pets",
 "Fortnite",
 "Minecraft",
 "Roblox",];
@@ -96,6 +98,7 @@ function AddItem(title) {
   var btn = document.createElement("BUTTON");
   btn.innerHTML = title;
   btn.classList.add('button');
+  //adds button to grid and listens for clicks
   document.getElementById("grid").appendChild(btn).addEventListener("click", function() {
     if ( btn.classList.contains('button') ) {
       btn.classList.remove('button');
@@ -104,7 +107,6 @@ function AddItem(title) {
       btn.classList.remove('button-highlighted');
       btn.classList.add('button');
     }
-    console.log("clicked", btn);
   })
 }
 
