@@ -6,6 +6,7 @@ const list =
 "Weeb",
 "Anime",
 "Brony",
+"Burping",
 "Body fluids",
 "Granny",
 "Family",
